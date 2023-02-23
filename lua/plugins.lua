@@ -5,17 +5,12 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use { 'wbthomason/packer.nvim' }
-	use { 'ellisonleao/glow.nvim' }
+	use { 'vimwiki/vimwiki' }
 	use { 'vim-airline/vim-airline' }
 	use { 'vim-airline/vim-airline-themes' }
 	use { 'shaunsingh/nord.nvim' }
 	use { 'm4xshen/autoclose.nvim' }
-	use {
-		'goolord/alpha-nvim',
-		config = function ()
-			require'alpha'.setup(require'alpha.themes.dashboard'.config)
-		end
-	}
+	use { 'goolord/alpha-nvim' }
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
