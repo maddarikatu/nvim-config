@@ -7,7 +7,7 @@ local lsp = require('lsp-zero').preset({
 
 -- When you don't have mason.nvim installed
 -- You'll need to list the servers installed in your system
-lsp.setup_servers({'c', 'lua', 'tsserver', 'eslint'})
+lsp.setup_servers({'c', 'rust-analyzer', 'lua', 'tsserver', 'eslint'})
 
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
