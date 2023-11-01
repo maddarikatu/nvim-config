@@ -5,6 +5,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use { 'wbthomason/packer.nvim' }
+	use { 'numToStr/Comment.nvim' }
 	use { 'vimwiki/vimwiki' }
 	use { 'vim-airline/vim-airline' }
 	use { 'vim-airline/vim-airline-themes' }
@@ -47,4 +48,6 @@ return require('packer').startup(function(use)
 	}
 	use 'nvim-tree/nvim-web-devicons'
 	use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+	use { 'preservim/tagbar' }
+	use { 'drewtempelmeyer/palenight.vim' }
 end)
