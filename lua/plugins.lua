@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
 	use { 'vim-airline/vim-airline-themes' }
 	use { 'shaunsingh/nord.nvim' }
 	use { 'm4xshen/autoclose.nvim' }
-	use { 'goolord/alpha-nvim' }
+  use { 'goolord/alpha-nvim' }
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
@@ -42,12 +42,12 @@ return require('packer').startup(function(use)
 		end,
 	}
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'nvim-tree/nvim-web-devicons'
-	use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 	use { 'preservim/tagbar' }
 	use { 'drewtempelmeyer/palenight.vim' }
 end)

@@ -16,4 +16,11 @@ vim.opt.filetype	= 'on'
 vim.opt.syntax		= 'on'
 
 vim.cmd				[[colorscheme palenight]]
+vim.cmd[[
+  augroup FileTypeSettings
+    autocmd!
+    autocmd FileType markdown,vimwiki setlocal wrap linebreak
+    autocmd FileType markdown,vimwiki setlocal spell spelllang=es
+  augroup END
+]]
 vim.g.mapleader		= " "
